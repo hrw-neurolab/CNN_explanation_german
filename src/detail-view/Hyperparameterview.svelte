@@ -161,7 +161,7 @@
         <div class="input-row">
           <div class="field is-horizontal">
             <div class="field-label is-normal">
-              <label class="label">Input Size:</label>
+              <label class="label">Eingabedimension:</label>
             </div>
             <input class="input is-very-small" type="number" bind:value={inputSize}
               min={kernelSize} max={7}>
@@ -187,7 +187,7 @@
         <div class="input-row">
           <div class="field is-horizontal">
             <div class="field-label is-normal">
-              <label class="label">Kernel Size:</label>
+              <label class="label">Kernelgröße:</label>
             </div>
             <input class="input is-very-small" type="number" bind:value={kernelSize} min={padding + 1}
               max={inputSizeWithPadding}>
@@ -219,7 +219,7 @@
           <div class="annotation">
             <img src='PUBLIC_URL/assets/img/pointer.svg' alt='pointer icon' width="25px">
             <div class="annotation-text-hyper">
-              <span style="font-weight:600">Hover over</span> the matrices to change kernel position.
+              <span style="font-weight:600">Fahre mit der Maus über</span> die Matrizen, um die Kernelposition zu ändern.
             </div>
           </div>
           

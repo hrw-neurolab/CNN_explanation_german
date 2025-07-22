@@ -8,7 +8,7 @@
 
 <div id="app-page">
   <recommender-overlay
-    my-brand="CNN Explainer"
+    my-brand="CNN Erklärer"
     brands-to-ignore="CNN 101"
     recommendation-count="10"
     similar-candidate-count="15"

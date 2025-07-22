@@ -464,11 +464,11 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
     layerGroup.selectAll('g.node-output')
       .on('mouseover', (d, i, g) => {
         nodeMouseOverHandler(d, i, g);
-        hoverInfoStore.set( {show: true, text: `Output value: ${formater(d.output)}`} );
+        hoverInfoStore.set( {show: true, text: `Ausgabewert: ${formater(d.output)}`} );
       })
       .on('mouseleave', (d, i, g) => {
         nodeMouseLeaveHandler(d, i, g);
-        hoverInfoStore.set( {show: false, text: `Output value: ${formater(d.output)}`} );
+        hoverInfoStore.set( {show: false, text: `Ausgabewert: ${formater(d.output)}`} );
       });
     
     if (curLayer[0].layerName !== 'output') {
@@ -507,7 +507,7 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
         .style('font-size', '11px')
         .style('fill', 'black')
         .style('opacity', 0.5)
-        .text((d, i) => classLists[i]);
+        .text((d, i) => overviewConfig.classLists[i]);
       
       // Add annotation text to tell readers the exact output probability
       // nodeGroups.append('text')
@@ -585,7 +585,7 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
     });
   
   detailedLabels.append('title')
-    .text('Move to article section');
+    .text('Zum Artikelabschnitt springen');
     
   detailedLabels.append('text')
     .style('opacity', 0.7)
@@ -690,11 +690,11 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
   redChannel.append('tspan')
     .style('dominant-baseline', 'hanging')
     .style('fill', '#C95E67')
-    .text('Red');
+    .text('Rot');
   
   redChannel.append('tspan')
     .style('dominant-baseline', 'hanging')
-    .text(' channel');
+    .text(' Kanal');
 
   inputAnnotation.append('text')
     .attr('x', nodeCoordinate[0][1].x + nodeLength / 2)
@@ -703,7 +703,7 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
     .style('dominant-baseline', 'hanging')
     .style('text-anchor', 'middle')
     .style('fill', '#3DB665')
-    .text('Green');
+    .text('Grün');
 
   inputAnnotation.append('text')
     .attr('x', nodeCoordinate[0][2].x + nodeLength / 2)
@@ -712,7 +712,7 @@ export const drawCNN = (width, height, cnnGroup, nodeMouseOverHandler,
     .style('dominant-baseline', 'hanging')
     .style('text-anchor', 'middle')
     .style('fill', '#3F7FBC')
-    .text('Blue');
+    .text('Blau');
 }
 
 /**

@@ -900,13 +900,13 @@ const drawIntermediateLayerAnnotation = (arg) => {
   
   slideText.append('tspan')
     .style('dominant-baseline', 'hanging')
-    .text('Slide kernel over input channel');
+    .text('Schieben Sie den Kernel über den Eingangskanal');
 
   slideText.append('tspan')
     .attr('x', sliderX)
     .attr('dy', '1em')
     .style('dominant-baseline', 'hanging')
-    .text('to get intermediate result');
+    .text('um ein Zwischenergebnis zu erhalten');
 
   // slideText.append('tspan')
   //   .attr('x', sliderX)
@@ -919,12 +919,12 @@ const drawIntermediateLayerAnnotation = (arg) => {
     .attr('dy', '1.2em')
     .style('dominant-baseline', 'hanging')
     .style('font-weight', 700)
-    .text('Click ');
+    .text('Klicken Sie hier');
   
   slideText.append('tspan')
     .style('dominant-baseline', 'hanging')
     .style('font-weight', 400)
-    .text('to learn more')
+    .text('um mehr zu erfahren')
 
   drawArrow({
     group: group,
@@ -947,25 +947,25 @@ const drawIntermediateLayerAnnotation = (arg) => {
 
   slideText2.append('tspan')
     .style('dominant-baseline', 'hanging')
-    .text('Each input chanel');
+    .text('Jeder Eingangskanal');
 
   slideText2.append('tspan')
     .attr('x', sliderX)
     .attr('dy', '1em')
     .style('dominant-baseline', 'hanging')
-    .text('gets a different kernel');
+    .text('bekommt einen anderen Kernel');
 
   slideText2.append('tspan')
     .attr('x', sliderX)
     .attr('dy', '1.3em')
     .style('font-weight', 700)
     .style('dominant-baseline', 'hanging')
-    .text('Hover over ');
+    .text('Bewegen Sie den Mauszeiger über ');
 
   slideText2.append('tspan')
     .style('font-weight', 400)
     .style('dominant-baseline', 'hanging')
-    .text('to see value!')
+    .text('um den Wert zu sehen!')
 
   drawArrow({
     group: group,
@@ -1006,13 +1006,13 @@ const drawIntermediateLayerAnnotation = (arg) => {
   
   plusText.append('tspan')
     .style('dominant-baseline', 'hanging')
-    .text('Add up all intermediate');
+    .text('Alle Zwischenergebnisse zusammenzählen');
   
   plusText.append('tspan')
     .attr('x', textX)
     .attr('dy', '1em')
     .style('dominant-baseline', 'hanging')
-    .text('results and then add bias');
+    .text('Ergebnisse und fügen dann Verzerrungen hinzu.');
   
   if (i === 9) {
     drawArrow({

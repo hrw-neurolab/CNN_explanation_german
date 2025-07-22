@@ -258,17 +258,17 @@
   <div class="box">
 
     <div class="buttons">
-      <div class="control-button" on:click={handleScroll} title="Jump to article section">
+      <div class="control-button" on:click={handleScroll} title="Zum Artikelabschnitt springen">
         <i class="fas fa-info-circle"></i>
       </div>
 
-      <div class="delete-button control-button" on:click={handleClickX} title="Close">
+      <div class="delete-button control-button" on:click={handleClickX} title="Schließen">
         <i class="fas control-icon fa-times-circle"></i>
       </div>
     </div>
 
     <div class="title-text">
-      Softmax Score for <i>"{outputName}"</i>
+      Softmax-Wert für <i>"{outputName}"</i>
     </div>
 
     <svg id="softmax-svg" width="470" height="105"/>
@@ -276,7 +276,7 @@
     <div class="annotation">
       <img src='PUBLIC_URL/assets/img/pointer.svg' alt='pointer icon'>
       <div class="annotation-text">
-        <span style="font-weight:600">Hover over</span> the numbers to highlight logit circles.
+        <span style="font-weight:600">Fahren Sie mit der Maus über</span> die Zahlen, um die Logit-Kreise hervorzuheben.
       </div>
     </div>
 

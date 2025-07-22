@@ -105,17 +105,17 @@
 <div class="wrapper">
   <div class="column has-text-centered">
     <div class="header-text">
-      Input ({image.length - 2 * padding}, {image.length - 2 * padding}) <br/>
+      Eingabe ({image.length - 2 * padding}, {image.length - 2 * padding}) <br/>
     </div>
     <div class="header-sub-text">
-      After-padding ({image.length}, {image.length})
+      Nach padding ({image.length}, {image.length})
     </div>
     <HyperparameterDataview on:message={handleMouseover} data={testImage} highlights={inputHighlights}
         outputLength={output.length} stride={stride} padding={padding} isStrideValid={isStrideValid}/>
   </div>
   <div class="column has-text-centered">
     <div class="header-text" style="padding-top: 27px;">
-      Output ({output.length}, {output.length})
+      Ausgabe ({output.length}, {output.length})
     </div>
     <div class="header-sub-text">
       &nbsp;

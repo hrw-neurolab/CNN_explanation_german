@@ -135,17 +135,17 @@
         </div>
 
         <div class="buttons">
-          <div class="control-button" on:click={handleScroll} title="Jump to article section">
+          <div class="control-button" on:click={handleScroll} title="Zum Artikelbereich springen">
             <i class="fas fa-info-circle"></i>
           </div>
 
-          <div class="play-button control-button" on:click={handleClickPause} title="Play animation">
+          <div class="play-button control-button" on:click={handleClickPause} title="Animation abspielen">
             {@html isPaused ?
               '<i class="fas fa-play-circle play-icon"></i>' :
               '<i class="fas fa-pause-circle"></i>'}
           </div>
 
-          <div class="delete-button control-button" on:click={handleClickX} title="Close">
+          <div class="delete-button control-button" on:click={handleClickX} title="schließen">
             <i class="fas control-icon fa-times-circle"></i>
           </div>
         </div>
@@ -162,7 +162,7 @@
       <div class="annotation">
         <img src='PUBLIC_URL/assets/img/pointer.svg' alt='pointer icon'>
         <div class="annotation-text">
-          <span style="font-weight:600">Hover over</span> the matrices to change kernel position.
+          <span style="font-weight:600">Bewegen Sie den Mauszeiger über</span> die Matrizen, um die Kernelposition zu ändern.
         </div>
       </div>
 

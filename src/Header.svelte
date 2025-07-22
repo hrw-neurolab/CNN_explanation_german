@@ -58,7 +58,7 @@
 
   <div id="logo">
     <div id="logo-text">
-      CNN Explainer
+      CNN-Erklaerer
     </div>
 
 		<svg width="510px" height="50px">
@@ -75,7 +75,7 @@
 
 			<g filter="url(#chalk-texture)" transform="translate(0, 35)">
 				<text id="svg-logo-tagline">
-					Learn Convolutional Neural Network (CNN) in your browser! 
+					Lernen Sie Convolutional Neural Network (CNN) in Browser!
 				</text>
 			</g>
 		</svg>
